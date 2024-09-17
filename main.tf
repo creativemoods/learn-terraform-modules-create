@@ -4,7 +4,7 @@
 # Terraform configuration
 
 provider "aws" {
-  region = "eu-west-2"
+  region = "eu-west-2" # London
   access_key = "AK..." # creativemoodstrainingx / studentx
   secret_key = "..."
 }
