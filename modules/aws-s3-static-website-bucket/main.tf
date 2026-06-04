@@ -58,26 +58,3 @@ resource "aws_s3_bucket_policy" "this" {
     ]
   })
 }
-[ ubuntu@studentx:~/learn-terraform-modules-create ] (main) $ cat modules/aws-s3-static-website-bucket/variables.tf 
-variable "bucket_name" {
-  description = "Name of the S3 bucket. Must be globally unique."
-  type        = string
-}
-
-variable "index_document" {
-  description = "Index document for the static website."
-  type        = string
-  default     = "index.html"
-}
-
-variable "error_document" {
-  description = "Error document for the static website."
-  type        = string
-  default     = "error.html"
-}
-
-variable "tags" {
-  description = "Tags to set on the bucket."
-  type        = map(string)
-  default     = {}
-}
